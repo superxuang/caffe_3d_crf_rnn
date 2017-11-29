@@ -1,0 +1,13 @@
+net: "F:/GitRepository/caffe_3d_crf_rnn/networks/net_stage_2.prototxt"
+snapshot_prefix: "F:/GitRepository/caffe_3d_crf_rnn/networks/snapshot_stage_2/snapshot"
+
+base_lr: 1e-7
+momentum: 0.99
+weight_decay: 0.0005
+lr_policy: "step"
+stepsize: 1000
+gamma: 0.1
+display: 1
+max_iter: 1000
+snapshot: 200
+solver_mode: GPU

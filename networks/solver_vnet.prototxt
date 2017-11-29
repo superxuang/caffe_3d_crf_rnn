@@ -1,0 +1,13 @@
+net: "F:/GitRepository/caffe_3d_crf_rnn/networks/vnet.prototxt"
+snapshot_prefix: "F:/GitRepository/caffe_3d_crf_rnn/networks/snapshot_vnet/snapshot"
+
+base_lr: 0.0001
+momentum: 0.99
+weight_decay: 0.0005
+lr_policy: "step"
+stepsize: 25000
+gamma: 0.1
+display: 1
+max_iter: 50000
+snapshot: 5000
+solver_mode: GPU

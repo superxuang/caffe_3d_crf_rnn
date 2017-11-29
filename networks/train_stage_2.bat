@@ -1,0 +1,2 @@
+..\Build\x64\Release\caffe.exe train --solver=F:/GitRepository/caffe_3d_crf_rnn/networks/solver_stage_2.prototxt --weights=F:/GitRepository/caffe_3d_crf_rnn/networks/snapshot_stage_1/snapshot_iter_7.caffemodel
+pause

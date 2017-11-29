@@ -1,0 +1,1 @@
+..\Build\x64\Release\caffe.exe test -iterations=24 -model=F:/GitRepository/caffe_3d_crf_rnn/networks/net_stage_2.prototxt -weights=F:/GitRepository/caffe_3d_crf_rnn/networks/snapshot_stage_2/snapshot_iter_1000.caffemodel -gpu=0
