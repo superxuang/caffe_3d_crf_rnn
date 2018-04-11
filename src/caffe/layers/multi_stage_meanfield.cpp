@@ -23,11 +23,6 @@
 
 #include <cmath>
 
-#include <itkImage.h>
-#include <itkSmartPointer.h>
-#include <itkImageFileReader.h>
-#include <itkImageFileWriter.h>
-
 namespace caffe {
 
 template <typename Dtype>
@@ -189,7 +184,7 @@ void MultiStageMeanfieldLayer<Dtype>::Reshape(const vector<Blob<Dtype>*>& bottom
  *
  * bottom[0] - Unary terms
  * bottom[1] - Softmax input/Output from the previous iteration (a copy of the unary terms if this is the first stage).
- * bottom[2] - RGB images
+ * bottom[2] - Original images
  *
  * top[0] - Output of the mean field inference (not normalized).
  */

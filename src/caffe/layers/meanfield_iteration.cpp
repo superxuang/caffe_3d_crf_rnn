@@ -20,11 +20,6 @@
 #include "caffe/layer.hpp"
 #include "caffe/layers/meanfield_iteration.hpp"
 
-#include <itkImage.h>
-#include <itkSmartPointer.h>
-#include <itkImageFileReader.h>
-#include <itkImageFileWriter.h>
-
 namespace caffe {
 
 /**
@@ -234,20 +229,6 @@ void MeanfieldIteration<Dtype>::Backward_cpu() {
       this->blobs_[1]->mutable_cpu_diff());
   }
 
-  /*Dtype* tmp = new Dtype[count_];
-  caffe_mul<Dtype>(count_, message_passing_.cpu_diff(), spatial_out_blob_.cpu_data(), tmp);
-
-  for (int c = 0; c < count_; ++c) {
-    (this->blobs_[0]->mutable_cpu_diff())[0] += tmp[c];
-  }
-
-  caffe_mul<Dtype>(count_, message_passing_.cpu_diff(), bilateral_out_blob_.cpu_data(), tmp);
-  for (int c = 0; c < count_; ++c) {
-    (this->blobs_[1]->mutable_cpu_diff())[0] += tmp[c];
-  }
-
-  delete[] tmp;*/
-
   // TODO: Check whether there's a way to improve the accuracy of this calculation.
   for (int n = 0; n < num_; ++n) {
 	indices[0] = n;
@@ -256,8 +237,6 @@ void MeanfieldIteration<Dtype>::Backward_cpu() {
       (Dtype) 0.,
 	  spatial_out_blob_.mutable_cpu_diff() + spatial_out_blob_.offset(indices));
   }
-  //caffe_cpu_scale<Dtype>(count_, (this->blobs_[0]->cpu_data())[0],
-  //    message_passing_.cpu_diff(), spatial_out_blob_.mutable_cpu_diff());
 
   for (int n = 0; n < num_; ++n) {
 	indices[0] = n;
@@ -266,8 +245,6 @@ void MeanfieldIteration<Dtype>::Backward_cpu() {
       (Dtype) 0.,
 	  bilateral_out_blob_.mutable_cpu_diff() + bilateral_out_blob_.offset(indices));
   }
-  //caffe_cpu_scale<Dtype>(count_, (this->blobs_[1]->cpu_data())[0],
-  //    message_passing_.cpu_diff(), bilateral_out_blob_.mutable_cpu_diff());
 
 
   //---------------------------- BP thru normalization --------------------------
