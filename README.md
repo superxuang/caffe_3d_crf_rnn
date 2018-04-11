@@ -29,9 +29,8 @@ Please cite our paper and Caffe if it is useful for your research:
       url = {https://doi.org/10.1007%2Fs11548-018-1733-7},
       year = 2018,
       month = {mar},
-      publisher = {Springer Nature},
       author = {Xuanang Xu and Fugen Zhou and Bo Liu},
-      title = {Automatic bladder segmentation from {CT} images using deep {CNN} and 3D fully connected {CRF}-{RNN}},
+      title = {Automatic bladder segmentation from CT images using deep CNN and 3D fully connected CRF-RNN},
       journal = {International Journal of Computer Assisted Radiology and Surgery}
     }
 
