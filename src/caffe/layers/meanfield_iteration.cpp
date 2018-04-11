@@ -35,7 +35,6 @@ void MeanfieldIteration<Dtype>::OneTimeSetUp(
 
   spatial_lattice_ = spatial_lattice;
   spatial_norm_ = spatial_norm;
-
   count_ = unary_terms->count();
   num_ = unary_terms->num();
   channels_ = unary_terms->channels();

@@ -1,7 +1,7 @@
 # Caffe with 3D CRF-RNN
 This is a modified version of [Caffe](https://github.com/BVLC/caffe) which supports the **3D Conditional Random Field Recurrent Neural Network (3D CRF-RNN) architecture** as described in our paper [Automatic bladder segmentation from CT images using deep CNN and 3D fully connected CRF-RNN](https://doi.org/10.1007/s11548-018-1733-7). The implementation of 3D CRF-RNN is extended from the [2D CRF-RNN](https://github.com/torrvision/crfasrnn/).
 
-This code has been compiled and passed on `Windows 7 (64 bits)` platform using `Visual Studio 2013`.
+This code has been compiled and passed on `Windows 7 (64 bits)` using `Visual Studio 2013`.
 
 ## How to build
 

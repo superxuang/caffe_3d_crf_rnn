@@ -214,9 +214,7 @@ void MultiStageMeanfieldLayer<Dtype>::Forward_cpu(const vector<Blob<Dtype>*>& bo
   }
 
   for (int i = 0; i < num_iterations_; ++i) {
-
     meanfield_iterations_[i]->PrePass(this->blobs_, &bilateral_lattices_, &bilateral_norms_);
-
     meanfield_iterations_[i]->Forward_cpu();
   }
 }
