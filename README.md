@@ -25,13 +25,18 @@ Run `.\windows\Caffe.bat` and build the project `caffe` in `Visual Studio 2013`.
 Please cite our paper and Caffe if it is useful for your research:
 
     @article{Xu_2018,
-      doi = {10.1007/s11548-018-1733-7},
-      url = {https://doi.org/10.1007%2Fs11548-018-1733-7},
-      year = 2018,
-      month = {mar},
-      author = {Xuanang Xu and Fugen Zhou and Bo Liu},
-      title = {Automatic bladder segmentation from CT images using deep CNN and 3D fully connected CRF-RNN},
-      journal = {International Journal of Computer Assisted Radiology and Surgery}
+      author="Xu, Xuanang and Zhou, Fugen and Liu, Bo",
+      title="Automatic bladder segmentation from CT images using deep CNN and 3D fully connected CRF-RNN",
+      journal="International Journal of Computer Assisted Radiology and Surgery",
+      year="2018",
+      month="Jul",
+      day="01",
+      volume="13",
+      number="7",
+      pages="967--975",
+      issn="1861-6429",
+      doi="10.1007/s11548-018-1733-7",
+      url="https://doi.org/10.1007/s11548-018-1733-7"
     }
 
 Caffe is released under the [BSD 2-Clause license](https://github.com/BVLC/caffe/blob/master/LICENSE).
